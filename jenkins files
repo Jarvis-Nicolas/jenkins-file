@@ -1,0 +1,20 @@
+pipeline{
+    agent{ label 'mon-agent' }
+    stages{
+        stage('Checkout'){
+            steps{
+                //Git
+            }
+        }
+        stage('Build'){
+            steps{
+                //Command qui build le projet
+            }
+        }
+        stage('Test'){
+            steps{
+                //Command qui test le projet
+            }
+        }
+    }
+}
